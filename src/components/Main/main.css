@@ -1,0 +1,314 @@
+.mainContainer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlightsSection {
+  display: flex;
+  /* width: 67vw; */
+  width: 800px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.highlightsTitleSection {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.highlights-card {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* coloring the highlights section */
+.highlights-headline {
+  font-family: "Markazi Text", sans-serif;
+  font-size: 44pt;
+  font-weight: bolder;
+}
+
+.highlights-button {
+  background-color: #f4ce14;
+  border: none;
+  height: 60px;
+  width: 150px;
+  border-radius: 12pt;
+  align-self: center;
+  font-family: "Karla", sans-serif;
+  font-size: 12pt;
+  font-weight: 800;
+}
+
+/* make another resizing design for highlightsSection at 800px using the width 600px*/
+
+.testimonialSection {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #edefee;
+  margin-top: 60px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.testimonial-headline {
+  align-self: center;
+  font-family: "Markazi Text", sans-serif;
+  font-size: 40pt;
+  font-weight: 500;
+}
+
+.testimonial-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* About CSS goes here */
+
+.about {
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+}
+
+.about-section1 {
+  width: 350px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.about-imgA,
+.about-imgB {
+  height: 240px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* .about-image-section {
+  display: grid;
+  grid-template-columns: repeat(17, 20px);
+  grid-template-rows: repeat(25, 20px);
+} */
+
+.about-imgA {
+  /* grid-column: 12/30; */
+  grid-column: 6/17;
+  z-index: 1;
+}
+
+.about-imgB {
+  /* grid-row: 15/40; */
+  grid-row: 9/23;
+}
+
+.aboutDescription-1,
+.aboutDescription-2 {
+  text-align: justify;
+}
+
+/* Styling the About section */
+.about-heading {
+  font-family: "Markazi Text", sans-serif;
+  font-size: 40pt;
+  font-weight: 600;
+  color: #f4ce14;
+}
+
+.about-sub-heading {
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 20pt;
+  margin-top: -40px;
+}
+
+@media (max-width: 800px) {
+  .highlightsSection {
+    width: 550px;
+  }
+  .highlights-headline {
+    font-size: 35pt;
+  }
+
+  .highlights-button {
+    height: 45px;
+    font-size: 11pt;
+  }
+
+  /* testimonials */
+  .testimonial {
+    width: 550px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .testimonial-headline {
+    font-size: 35pt;
+  }
+
+  /* About */
+  .about {
+    width: 550px;
+  }
+
+  .about-section1 {
+    width: 250px;
+    margin-top: 0px;
+  }
+
+  .about-imgA,
+  .about-imgB {
+    height: 200px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  /* .about-image-section {
+    display: grid;
+    grid-template-columns: repeat(13, 20px);
+    grid-template-rows: repeat(18, 20px);
+  } */
+
+  .about-imgA {
+    grid-column: 5/14;
+    z-index: 1;
+  }
+
+  .about-imgB {
+    grid-row: 7/19;
+  }
+
+  .about-heading {
+    font-size: 30pt;
+  }
+
+  .about-sub-heading {
+    font-size: 16pt;
+  }
+
+  .aboutDescription-1,
+  .aboutDescription-2 {
+    font-size: 11pt;
+  }
+}
+
+@media (max-width: 545px) {
+  .testimonial {
+    width: 400px;
+  }
+
+  .testimonial-card {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .about {
+    width: 400px;
+  }
+
+  .about-imgA,
+  .about-imgB {
+    height: 160px;
+    width: 140px;
+  }
+
+  /* .about-image-section {
+    display: grid;
+    grid-template-columns: repeat(10, 20px);
+    grid-template-rows: repeat(13, 20px);
+  } */
+
+  .about-imgA {
+    grid-column: 4/11;
+  }
+
+  .about-imgB {
+    grid-row: 6/14;
+  }
+
+  .about-heading {
+    font-size: 25pt;
+  }
+
+  .about-sub-heading {
+    font-size: 13pt;
+  }
+
+  .aboutDescription-1,
+  .aboutDescription-2 {
+    font-size: 8pt;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 536px) {
+  .highlightsSection {
+    width: 400px;
+    gap: 20px;
+  }
+  .highlightsTitleSection {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .highlightsTitleSection h1 {
+    align-self: center;
+  }
+  .highlights-headline {
+    font-size: 25pt;
+  }
+  .highlights-card {
+    width: 400px;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .highlightsSection,
+  .highlights-card {
+    width: 300px;
+  }
+
+  .about {
+    width: 250px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-section1{
+    margin-left: 0px;
+  }
+
+  .about-image-section {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 300px) {
+  .highlightsSection,
+  .highlights-card {
+    width: 250px;
+  }
+}
+
+
+
+

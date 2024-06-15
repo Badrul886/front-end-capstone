@@ -1,0 +1,89 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  background-color: #edefee;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-top: 130px;
+  object-fit: cover;
+}
+
+.footer-container {
+  display: flex;
+  width: 780px;
+  justify-content: space-between;
+}
+
+.footer-ul {
+  margin-left: 60px;
+  display: inline;
+}
+
+.footer-ul li a {
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+.footer-doormat-heading,
+.footer-contact-heading,
+.footer-social-heading {
+  color: #495e57;
+}
+
+@media (max-width: 800px) {
+  .footer-logo {
+    height: 30px;
+  }
+
+  .footer-container {
+    width: 540px;
+  }
+  .footer-doormat-heading,
+  .footer-contact-heading,
+  .footer-social-heading {
+    font-size: 10pt;
+  }
+  .footer-ul li a {
+    font-size: 10pt;
+  }
+}
+
+
+
+@media (max-width: 415px) {
+  .footer{
+    flex-wrap: wrap;
+  }
+
+.footer-container {
+  width: 300px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-logo{
+  margin-top: 0px;
+  align-self: center;
+}
+
+.footer-ul {
+  margin-left: 60px;
+  display: inline;
+}
+
+.footer-doormat-heading,
+  .footer-contact-heading,
+  .footer-social-heading {
+   font-size: 8pt;
+ }
+
+.footer-ul li a {
+  font-weight: 500;
+  font-size: 8pt;
+}
+}
