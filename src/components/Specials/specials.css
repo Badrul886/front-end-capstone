@@ -1,4 +1,4 @@
-.cardContainer {
+.specialsContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -8,11 +8,11 @@
   border-top-right-radius: 18pt;
 }
 
-.cardImageContainer {
+.specialsImageContainer {
   flex: 1;
 }
 
-.cardImage {
+.specialsImage {
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -20,34 +20,34 @@
   border-top-right-radius: 16pt;
 }
 
-.cardInfoContainer {
+.specialsInfoContainer {
   display: flex;
   flex-direction: column;
   margin: 10px;
   height: 275px;
 }
 
-.cardTitlePrice {
+.specialsTitlePrice {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.cardTitle {
+.specialsTitle {
   display: inline;
   font-family: "Markazi Text", sans-serif;
   font-size: 18pt;
   font-weight: bold;
 }
 
-.cardPrice {
+.specialsPrice {
   color: #ee9972;
   font-family: "Karla", sans-serif;
   font-size: 14pt;
   font-weight: bold;
 }
 
-.cardDescription {
+.specialsDescription {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 35ch;
@@ -57,61 +57,57 @@
   color: #495e57;
 }
 
-.cardDownline {
+.specialsDownline {
   font-family: "Karla", sans-serif;
   font-size: 12pt;
   font-weight: 600;
 }
 
-.card-honda-icon {
+.specials-honda-icon {
   width: 15px;
   object-fit: cover;
   margin-left: 8px;
 }
 
 @media (max-width: 800px) {
-  .cardInfoContainer {
+  .specialsInfoContainer {
     height: 225px;
   }
 
-  .cardContainer {
+  .specialsContainer {
     width: 165px;
   }
 
-  .cardTitle {
+  .specialsTitle {
     font-size: 14pt;
   }
 
-  .cardPrice {
+  .specialsPrice {
     font-size: 10pt;
   }
 
-  .cardDescription {
+  .specialsDescription {
     font-size: 10pt;
   }
 
-  .cardDownline{
+  .specialsDownline {
     font-size: 10pt;
   }
 
-  .card-honda-icon{
+  .specials-honda-icon {
     width: 12px;
   }
 }
 
 @media (max-width: 560px) {
-  .cardContainer{
+  .specialsContainer {
     justify-self: center;
     align-self: auto;
   }
 }
 
 @media (max-width: 400px) {
-  .cardContainer{
+  .specialsContainer {
     width: 200px;
   }
 }
-
-
-
-

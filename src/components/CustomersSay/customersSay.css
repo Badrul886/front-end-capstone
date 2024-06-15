@@ -1,4 +1,4 @@
-.testimonialContainer {
+.customersSayContainer {
   display: flex;
   width: 180px;
   height: 220px;
@@ -6,40 +6,40 @@
   background-color: white;
 }
 
-.insideTestimonialContainer {
+.insideCustomersSayContainer {
   display: flex;
   flex-direction: column;
   margin: 20px;
 }
 
-.testimonialRatingIcon{
+.customersSayRatingIcon {
   margin-bottom: 10px;
 }
 
-.testimonialStar {
+.customersSayStar {
   height: 13px;
   object-fit: cover;
   margin-left: 1px;
 }
 
-.testimonialImage {
+.customersSayImage {
   width: 60px;
   height: 60px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.testimonialImageName {
+.customersSayImageName {
   display: flex;
   align-content: center;
 }
 
-.testimonialName {
+.customersSayName {
   margin-left: 5px;
   font-weight: 600;
 }
 
-.testimonialReview {
+.customersSayReview {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 20ch;
@@ -48,28 +48,27 @@
   font-weight: 600;
 }
 
-
-@media (max-width: 800px){
-  .testimonialContainer {
+@media (max-width: 800px) {
+  .customersSayContainer {
     width: 130px;
     height: 160px;
   }
-  .insideTestimonialContainer{
+  .insideCustomersSayContainer {
     margin: 10px;
   }
-  .testimonialRatingIcon{
-  margin-bottom: 5px;
-}
-.testimonialImage{
-  width: 40px;
-  height: 40px;
-  border-radius: 6px;
-}
-.testimonialName{
-  font-size: 12px;
-}
-.testimonialReview{
-  font-size: 8pt;
-  font-weight: 500;
-}
+  .customersSayRatingIcon {
+    margin-bottom: 5px;
+  }
+  .customersSayImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+  }
+  .customersSayName {
+    font-size: 12px;
+  }
+  .customersSayReview {
+    font-size: 8pt;
+    font-weight: 500;
+  }
 }

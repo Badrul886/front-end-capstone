@@ -1,5 +1,4 @@
 import restaurant from "../../images/restauranfood.jpg";
-import Grid from "../Grid/Grid";
 import "./header.css";
 
 function Header() {
@@ -16,7 +15,6 @@ function Header() {
           <button className="header-button">Reserve a Table</button>
         </div>
         <img className="image" src={restaurant} alt="restaurant food" />
-        {/* </Grid> */}
       </div>
     </div>
   );
