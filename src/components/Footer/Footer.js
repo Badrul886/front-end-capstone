@@ -1,38 +1,28 @@
 import logo from "../../images/logo.png";
-import Grid from "../Grid/Grid";
 import { Link, NavLink } from "react-router-dom";
 import "./footer.css";
 
 function Footer() {
-  // const doormat = [
-  //   "Home",
-  //   "About",
-  //   "Menu",
-  //   "Reservations",
-  //   "Order Online",
-  //   "Login",
-  // ];
-
   const doormat = [
-    {name: "Home", path: "/"},
-    {name: "About", path: "/about"},
-    {name: "Menu", path: "/menu"},
-    {name: "Reservations", path: "/reservations"},
-    {name: "Order Online", path: "/order-online"},
-    {name: "Login", path: "/login"},
-  ]
-  // const contact = ["Address", "phone number", "email"];
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Menu", path: "/menu" },
+    { name: "Reservations", path: "/reservations" },
+    { name: "Order Online", path: "/order-online" },
+    { name: "Login", path: "/login" },
+  ];
+
   const contact = [
-    {name: "Address", path: "/address"},
-    {name: "phone number", path: "/phone-number"},
-    {name: "email", path: "/email"}
-  ]
-  // const socialMedia = ["facebook", "X", "instagram"];
+    { name: "Address", path: "/address" },
+    { name: "phone number", path: "/phone-number" },
+    { name: "email", path: "/email" },
+  ];
+
   const socialMedia = [
-    {name: "facebook", path: "/facebook"},
-    {name: "X", path: "/x"},
-    {name: "instagram", path: "/instagram"}
-  ]
+    { name: "facebook", path: "/facebook" },
+    { name: "X", path: "/x" },
+    { name: "instagram", path: "/instagram" },
+  ];
 
   return (
     <footer className="footer">

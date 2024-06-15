@@ -2,8 +2,8 @@ import Mario_and_Adrian_A from "../../images/Mario_and_Adrian_A.jpg";
 import Mario_and_Adrian_B from "../../images/Mario_and_Adrian_B.jpg";
 import "./main.css";
 import { saladData, testimonialData } from "../lib/data";
-import Card from "../Highlights/Highlights";
-import Testimonials from "../Testimonials/Testimonials";
+import Specials from "../Specials/Specials";
+import CustomersSay from "../CustomersSay/CustomersSay";
 import Grid from "../Grid/Grid";
 
 function Main() {
@@ -18,7 +18,7 @@ function Main() {
         {/* card components here */}
         <div className="highlights-card">
           {saladData.map((item) => (
-            <Card key={item.id} item={item} />
+            <Specials key={item.id} item={item} />
           ))}
         </div>
       </section>
@@ -29,12 +29,13 @@ function Main() {
           <h1 className="testimonial-headline">Testimonials</h1>
           <div className="testimonial-card">
             {testimonialData.map((item) => (
-              <Testimonials key={item.id} item={item} />
+              <CustomersSay key={item.id} item={item} />
             ))}
           </div>
         </section>
       </div>
 
+      {/* About Components */}
       <section className="about">
         <div className="about-section1">
           <h1 className="about-heading">Little Lemon</h1>
