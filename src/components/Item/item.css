@@ -1,0 +1,130 @@
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.8fr 0.1fr 0.8fr 0.1fr;
+  background-color: #EDEFEE;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.cardImageContainer {
+  grid-column: 1/4;
+}
+
+.cardImage {
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.cardTitle {
+  grid-column: 1/3;
+  /* justify-self: flex-start; */
+}
+
+.cardPrice {
+  grid-column: 3/4;
+  justify-self: end;
+  align-self: center;
+  color: #EE9972;
+}
+
+.cardDescription {
+  grid-column: 1/4;
+}
+
+.cardDownline {
+  grid-column: 1/3;
+}
+
+.card-honda-icon {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  height: 10px;
+  width: 16px;
+  padding-top: 7px;
+  align-self: start;
+  /* margin-left: -2.5em; */
+  object-fit: cover;
+}
+
+@media (max-width: 950px) {
+.cardTitle, .cardPrice{
+  font-size: 14px;
+}
+
+  .cardDescription,.cardDownline{
+    font-size: small;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.4fr 0.2fr 0.3fr 0.1fr;
+  }
+  .cardImage {
+    height: 100px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .cardTitle,
+  .cardPrice,
+  .cardDescription,
+  .cardDownline {
+    font-size: small;
+  }
+  .card-honda-icon {
+    height: 7px;
+    width: 12px;
+    object-fit: cover;
+    margin-left: -15px;
+  }
+}
+
+@media (max-width: 705px){
+  .card-honda-icon{
+    margin-left: 5px;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  .cardContainer {
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: 180px 50px 160px 60px;
+    margin-left: -18px;
+  }
+  .cardImage {
+    height: 130px;
+    width: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-left: -7px;
+  }
+  .cardTitle,
+  .cardPrice,
+  .cardDescription {
+    font-size: 16px;
+  }
+
+  .cardDownline{
+    font-size: 14px;
+  }
+  .cardTitle {
+    margin-right: -50px;
+  }
+  .cardPrice{
+    padding-left: 7px;
+  }
+  .card-honda-icon {
+    height: 9px;
+    width: 12px;
+    object-fit: cover;
+    padding-left: 20px;
+  }
+}

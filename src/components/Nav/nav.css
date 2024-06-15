@@ -1,0 +1,126 @@
+/* active class is provided to each pages by the react-router-dom while using NavLink  */
+.active {
+  /* background-color: #495E57; */
+}
+
+.hamburger {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  display: none; /*by default the hamburger menu will be hidden*/
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+  z-index: 111111;
+}
+
+.hamburger span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: black;
+  border-radius: 0.2rem;
+}
+
+.logo {
+  height: 50px;
+  margin-left: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  top: 0;
+}
+
+.lists {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    width: 550px;
+  }
+
+  .logo {
+    height: 30px;
+    align-self: center;
+  }
+
+  .lists {
+    width: 350px;
+  }
+}
+
+/* Mobile Version */
+
+@media (max-width: 560px) {
+
+  .logo {
+    height: 40px;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .lists {
+    display: none; /* By default it will be hidden*/
+    /* display: flex; */
+    width: 100px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: left;
+    margin-right: 0px;
+    margin-top: 600px;
+    background-color: #495e57;
+    z-index: 1;
+  }
+
+  .nav ul.open{
+    display: flex;
+  }
+
+  .lists li {
+    margin-left: -30px;
+  }
+
+  .lists li a {
+    color: #f4ce14;
+    font-size: 10pt;
+    display: block;
+    padding: 8px;
+  }
+
+  .lists li:first-child {
+    margin-top: 60px;
+  }
+}
+
+

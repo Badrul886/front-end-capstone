@@ -1,0 +1,75 @@
+.testimonialContainer {
+  display: flex;
+  width: 180px;
+  height: 220px;
+  flex-direction: column;
+  background-color: white;
+}
+
+.insideTestimonialContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.testimonialRatingIcon{
+  margin-bottom: 10px;
+}
+
+.testimonialStar {
+  height: 13px;
+  object-fit: cover;
+  margin-left: 1px;
+}
+
+.testimonialImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.testimonialImageName {
+  display: flex;
+  align-content: center;
+}
+
+.testimonialName {
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.testimonialReview {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 20ch;
+  font-family: "Karla", sans-serif;
+  font-size: 10pt;
+  font-weight: 600;
+}
+
+
+@media (max-width: 800px){
+  .testimonialContainer {
+    width: 130px;
+    height: 160px;
+  }
+  .insideTestimonialContainer{
+    margin: 10px;
+  }
+  .testimonialRatingIcon{
+  margin-bottom: 5px;
+}
+.testimonialImage{
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+.testimonialName{
+  font-size: 12px;
+}
+.testimonialReview{
+  font-size: 8pt;
+  font-weight: 500;
+}
+}
