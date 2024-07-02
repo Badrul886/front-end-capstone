@@ -121,14 +121,16 @@ function updateTimes(state, action) {
             className={showErrorModal ? "error" : ""}
           />
 
-          <label htmlFor="res-time">Choose time</label>
+          <label data-testId="ChooseTime" htmlFor="res-time">
+            Choose time
+          </label>
           <select
             id="time"
             name="time"
             value={selectedTime}
             onChange={handleTimeChange}
           >
-            <option value="">Select a time</option>
+            {/* <option value="">Select a time</option> */}
             {availableTimes.map((time, index) => (
               <option key={index} value={time}>
                 {time}
@@ -136,7 +138,9 @@ function updateTimes(state, action) {
             ))}
           </select>
 
-          <label htmlFor="guests">Number of guests</label>
+          <label data-testId="NumOfGuests" htmlFor="guests">
+            Number of guests
+          </label>
           <input
             type="number"
             placeholder="0"
@@ -148,7 +152,9 @@ function updateTimes(state, action) {
             required
           />
 
-          <label htmlFor="occasion">Occasion</label>
+          <label data-testId="Occasion" htmlFor="occasion">
+            Occasion
+          </label>
           <select id="occasion" required>
             <option value="birthday">Birthday</option>
             <option value="anniversary">Anniversary</option>
