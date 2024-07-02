@@ -43,6 +43,11 @@
   font-family: "Karla", sans-serif;
   font-size: 12pt;
   font-weight: 800;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.highlights-button:hover{
+  cursor: pointer;
 }
 
 /* make another resizing design for highlightsSection at 800px using the width 600px*/

@@ -3,9 +3,9 @@ import UnderConstruction from '../UnderConstruction/UnderConstruction'
 
 function Login() {
   return (
-    <div>
+    <>
       <UnderConstruction/>
-    </div>
+    </>
   )
 }
 

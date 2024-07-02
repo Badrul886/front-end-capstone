@@ -1,6 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../images/logo.png";
-import Grid from "../Grid/Grid";
 import { useState } from "react";
 import "./nav.css";
 
@@ -22,7 +21,7 @@ function Nav() {
     },
     {
       name: "Reservations",
-      path: "/reservations",
+      path: "/bookingPage",
     },
     {
       name: "Order Online",

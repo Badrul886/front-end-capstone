@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import About from "./components/ExtraPages/About";
 import Login from "./components/ExtraPages/Login";
 import Menu from "./components/ExtraPages/Menu";
+import BookingPage from "./components/BookingPage/BookingPage";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/login" element={<Login />} />
-        {/* <Route path="/booking" element={<BookingPage />}></Route> */}
+        <Route path="/bookingPage" element={<BookingPage />} />
       </Routes>
       <Footer />
     </div>
